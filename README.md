@@ -3,8 +3,10 @@ I quickly whipped this container image together because I needed a container tha
 
 # Building from source
 To build this from source you need to clone the public github repo then run docker build:
-```git clone https://github.com/TheBoroer/docker-cronjob .```
-```docker build -t docker-cronjob:latest .```
+
+```git clone https://github.com/TheBoroer/docker-cronjob . ```
+
+```docker build -t docker-cronjob:latest . ```
 
 # Pulling from Docker Hub
 ```docker pull boro/docker-cronjob```
