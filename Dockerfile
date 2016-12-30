@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER me@bo.ro
 
-cro# Add crontab file in the cron directory
+# Add crontab file in the cron directory
 ADD crontab /etc/cron.d/container-cron
 
 # Give execution rights on the cron job
