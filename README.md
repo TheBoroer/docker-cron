@@ -1,3 +1,7 @@
+# **PLEASE NOTE**
+This is still work in progress. It should be finished in the next couple of days when I have the time. 
+
+
 # Introduction
 I quickly whipped this container image together because I needed a container that can just run remote monitoring/alerting bash and python scripts. It has the ability to pull files (and repull/update files when redeploying/restarting the container) from git through the use of environment configurable parameters.
 
