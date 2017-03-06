@@ -12,7 +12,7 @@ RUN touch /var/log/cron.log
 
 #Install Cron
 RUN apt-get update
-RUN apt-get -y install cron
+RUN apt-get -y install cron nano
 
 # Fix: "TERM environment variable not set." error when entering the container with bash
 RUN echo "export TERM=xterm" >> /etc/bash.bashrc
