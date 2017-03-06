@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER docker@bo.ro
+MAINTAINER Boro <docker@bo.ro>
 
 # Add crontab file in the cron directory
 ADD crontab /etc/cron.d/container-cron
