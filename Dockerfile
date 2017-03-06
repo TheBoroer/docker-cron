@@ -14,5 +14,8 @@ RUN touch /var/log/cron.log
 RUN apt-get update
 RUN apt-get -y install cron
 
+# Fix: "TERM environment variable not set." error when entering the container with bash
+RUN echo "export TERM=xterm" >> /etc/bash.bashrc
+
 # Run the command on container startup
 CMD cron && tail -f /var/log/cron.log
