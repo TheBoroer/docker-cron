@@ -11,5 +11,4 @@ RUN chmod 0644 /etc/cron.d/container-cron
 RUN touch /var/log/cron.log
 
 # Run the command on container startup
-#CMD cron && tail -f /var/log/cron.log
-RUN /usr/bin/crontab /etc/cron.d/container-cron
+CMD cron && tail -f /var/log/cron.log
